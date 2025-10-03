@@ -1,0 +1,319 @@
+.tg-container {
+    width: 100%;
+    margin-right: auto;
+    margin-left: auto
+}
+
+@media (min-width:768px) {
+    .tg-container--boxed .tg-site {
+        max-width: 750px
+    }
+
+    .tg-container {
+        max-width: 720px
+    }
+}
+
+@media (min-width:992px) {
+    .tg-container--boxed .tg-site {
+        max-width: 970px
+    }
+
+    .tg-container {
+        max-width: 940px
+    }
+}
+
+@media (min-width:1200px) {
+    .tg-container--boxed .tg-site {
+        max-width: 1270px
+    }
+
+    .tg-container {
+        max-width: 1160px;
+    }
+}
+
+.tg-container--flex {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -ms-flex-wrap: wrap;
+    flex-wrap: wrap
+}
+
+.tg-container--flex-center {
+    -ms-flex-line-pack: center;
+    align-content: center;
+    -webkit-box-align: center;
+    -ms-flex-align: center;
+    align-items: center
+}
+
+.tg-container--flex-space-between {
+    -webkit-box-pack: justify;
+    -ms-flex-pack: justify;
+    justify-content: space-between
+}
+
+
+a {
+    color: #16181a;
+    text-decoration: none;
+    -webkit-transition: all 0.35s ease-in-out;
+    transition: all 0.35s ease-in-out
+}
+
+.tg-primary-menu>div ul li ul {
+    position: absolute;
+    display: block;
+    top: 100%;
+    border: 1px solid #e9ecef;
+    width: 240px;
+    background: #294c5b
+}
+
+.tg-primary-menu>div ul li ul li {
+    border-bottom: 1px solid #e9ecef
+}
+
+
+.tg-primary-menu>div ul li ul li a {
+    padding: 1em
+}
+
+.tg-primary-menu>div ul li ul,
+.tg-primary-menu>div ul li:hover ul ul,
+.tg-primary-menu>div ul li.focus ul ul {
+    z-index: 99999;
+    position: absolute;
+    left: -999999px
+}
+
+.tg-primary-menu>div ul li:hover>ul,
+.tg-primary-menu>div ul li.focus>ul {
+    left: auto
+}
+
+.tg-primary-menu>div>ul {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -ms-flex-wrap: wrap;
+    flex-wrap: wrap;
+    -webkit-box-pack: end;
+    -ms-flex-pack: end;
+    justify-content: flex-end;
+    -webkit-box-align: center;
+    -ms-flex-align: center;
+    align-items: center
+}
+
+.tg-primary-menu>div>ul>li {
+    margin: 1em
+}
+
+.tg-primary-menu>div>ul>li:hover ul ul,
+.tg-primary-menu>div>ul>li.focus ul ul {
+    position: absolute;
+    left: -999999px
+}
+
+
+.tg-header-action-list {
+    list-style-type: none;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    margin: 0
+}
+
+
+.tg-header-action-list .tg-header-action__item.tg-mobile-toggle {
+    display: none
+}
+
+
+.tg-mobile-navigation {
+    visibility: hidden;
+    opacity: 0;
+    position: fixed;
+    top: 0;
+    bottom: 0;
+    left: 0;
+    z-index: 9999;
+    background: #fff;
+    width: 300px;
+    -webkit-transform: translateX(-100%);
+    transform: translateX(-100%);
+    -webkit-transition: 0.35s visibility ease, 0.35s opacity ease, 0.35s -webkit-transform ease;
+    transition: 0.35s visibility ease, 0.35s opacity ease, 0.35s -webkit-transform ease;
+    transition: 0.35s transform ease, 0.35s visibility ease, 0.35s opacity ease;
+    transition: 0.35s transform ease, 0.35s visibility ease, 0.35s opacity ease, 0.35s -webkit-transform ease;
+    padding: 50px 20px 20px;
+    overflow-y: scroll;
+    -webkit-overflow-scrolling: touch
+}
+
+
+#site-navigation .menu-pricing a:link,
+#site-navigation .menu-pricing a:visited {
+    font-size: 15px;
+    font-weight: 500;
+    letter-spacing: 0;
+    text-transform: capitalize;
+    color: #fff !important;
+    background: #22c8e5;
+    border-radius: 20px;
+    line-height: 38px;
+    padding: 0 30px
+}
+
+#site-navigation .menu-pricing a:hover {
+    color: #fff !important;
+    background: #f7345e
+}
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    padding: 30px;
+    font-family: "Helvetica Neue", helvetica, arial;
+    background: url('https://subtlepatterns.com/patterns/white_carbonfiber.png');
+}
+
+#container {
+    position: relative;
+    width: 940px;
+}
+
+#container:after {
+    content: "";
+    display: block;
+    clear: both;
+    height: 0;
+}
+
+#menu {
+    position: relative;
+    float: left;
+    width: 100%;
+    /*! padding: 0 20px; */
+    border-radius: 3px;
+    /*! box-shadow: inset 0 1px 1px rgba(255, 255, 255, .5), inset 0 -1px 0 rgba(0, 0, 0, .15), 0 1px 3px rgba(0, 0, 0, .15); */
+    background: #102f3a;
+}
+
+#menu,
+#menu ul {
+    list-style: none;
+}
+
+#menu>li {
+    float: left;
+    position: relative;
+    border-right: 1px solid rgba(0, 0, 0, .1);
+    box-shadow: 1px 0 0 rgba(255, 255, 255, .25);
+    perspective: 1000px;
+
+}
+
+#menu>li:first-child {
+    border-left: 1px solid rgba(255, 255, 255, .25);
+    box-shadow: -1px 0 0 rgba(0, 0, 0, .1), 1px 0 0 rgba(255, 255, 255, .25);
+}
+
+#menu a {
+    display: block;
+    position: relative;
+    z-index: 10;
+    padding: 13px 20px 13px 20px;
+    text-decoration: none;
+    color: white;
+    line-height: 1;
+    font-weight: 600;
+    font-size: 12px;
+    letter-spacing: -.05em;
+    background: #102f3a;
+    text-shadow: 0 1px 1px rgba(255, 255, 255, .9);
+    transition: all .25s ease-in-out;
+
+}
+
+#menu>li:hover>a {
+    background: #333;
+    color: rgba(0, 223, 252, 1);
+    text-shadow: none;
+}
+
+#menu li ul {
+    position: absolute;
+    left: 0;
+    z-index: 1;
+    width: 200px;
+    padding: 0;
+    opacity: 0;
+    visibility: hidden;
+    border-bottom-left-radius: 4px;
+    border-bottom-right-radius: 4px;
+    background: transparent;
+    overflow: hidden;
+    transform-origin: 50% 0%;
+}
+
+
+#menu li:hover ul {
+
+    /*! padding: 15px 0; */
+    background: #3bd9ca;
+    opacity: 1;
+    visibility: visible;
+    box-shadow: 1px 1px 7px rgba(0, 0, 0, .5);
+    animation-name: swingdown;
+    animation-duration: 1s;
+    animation-timing-function: ease;
+
+}
+
+@keyframes swingdown {
+    0% {
+        opacity: .99999;
+        transform: rotateX(90deg);
+    }
+
+    30% {
+        transform: rotateX(-20deg) rotateY(5deg);
+        animation-timing-function: ease-in-out;
+    }
+
+    65% {
+        transform: rotateX(20deg) rotateY(-3deg);
+        animation-timing-function: ease-in-out;
+    }
+
+    100% {
+        transform: rotateX(0);
+        animation-timing-function: ease-in-out;
+    }
+}
+
+#menu li li a {
+    padding-left: 15px;
+    font-weight: 400;
+    color: #ddd;
+    text-shadow: none;
+    border-top: dotted 1px transparent;
+    border-bottom: dotted 1px transparent;
+    transition: all .15s linear;
+}
+
+#menu li li a:hover {
+    color: #102f3a;
+    border-top: dotted 1px rgba(255, 255, 255, .15);
+    border-bottom: dotted 1px rgba(255, 255, 255, .15);
+    background: rgba(0, 223, 252, .02);
+}
